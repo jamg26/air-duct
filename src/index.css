@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* @font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic"),
+    url(./fonts/CenturyGothic.ttf) format("truetype");
+} */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* body {
+  margin-top: 50px !;
+} */
+
+#navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
