@@ -43,8 +43,8 @@ class Home extends Component {
   }
 
   render() {
-    return (
-      <div id="home">
+    const bookModal = () => {
+      return (
         <Modal
           isOpen={this.state?.book}
           toggle={() => this.setState({ book: !this.state?.book })}
@@ -82,6 +82,12 @@ class Home extends Component {
             </Button>
           </ModalFooter>
         </Modal>
+      );
+    };
+
+    return (
+      <div id="home">
+        {bookModal()}
         <img
           src={homeBanner}
           alt=""
@@ -160,6 +166,7 @@ class Home extends Component {
                 src={van}
                 alt=""
                 height="600px"
+                width="100%"
               />
               <img
                 className="d-md-none d-block"
